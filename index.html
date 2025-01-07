@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundo dos Gatos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <svg width="40" height="40" viewBox="0 0 40 40">
+                <path
+                    d="M20 0C9 0 0 9 0 20s9 20 20 20 20-9 20-20S31 0 20 0zm0 36c-8.8 0-16-7.2-16-16S11.2 4 20 4s16 7.2 16 16-7.2 16-16 16z" />
+                <circle cx="14" cy="16" r="2" />
+                <circle cx="26" cy="16" r="2" />
+                <path d="M20 28c-4 0-7-3-7-7h2c0 2.8 2.2 5 5 5s5-2.2 5-5h2c0 4-3 7-7 7z" />
+            </svg>
+
+        </div>
+        <div class="burger-menu" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <nav class="nav-links" id="nav-links">
+            <a href="#hero">Home</a>
+            <a href="#gatos">Gatos</a>
+            <a href="#galeria">Galeria</a>
+            <iframe src="https://github.com/sponsors/fvandrad/button" title="Sponsor fvandrad" height="32" width="114"
+                style="border: 0; border-radius: 6px;"></iframe>
+            <button class="cta">Adote um Gato</button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <h1>Descubra o Mundo<br>Mágico dos Gatos</h1>
+            <p>Conheça nossos amigos felinos e encontre seu companheiro perfeito</p>
+            <div class="hero-buttons">
+                <a href="#gatos"><button class="primary">Conheça os Gatos</button></a>
+                <a href="#galeria"><button class="secondary">Saiba Mais</button></a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="images/um-gato-1.png" alt="Gato">
+
+        </div>
+    </section>
+
+    <!-- Cards Section -->
+    <section class="cards" id="gatos">
+
+        <h2>Gatos em Destaque</h2>
+        <div class="card-grid">
+            <div class="card">
+                <img src="images/um-gato-2.png" alt="Gata">
+                <h3>Lua</h3>
+                <p>Adulto, fêmea</p>
+            </div>
+            <div class="card">
+                <img src="images/um-gato-3.png" alt="Gata">
+                <h3>Lara</h3>
+                <p>Adulto, fêmea</p>
+            </div>
+            <div class="card">
+                <img src="images/um-gato-4.png" alt="Gato">
+                <h3>Spike</h3>
+                <p>Adulto, macho</p>
+            </div>
+            <div class="card">
+                <img src="images/um-gato-5.png" alt="Gato">
+                <h3>Spike</h3>
+                <p>Adulto, fêmea</p>
+            </div>
+            <!-- Mais cards aqui -->
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="galeria">
+        <h2>Nossa Galeria</h2>
+        <div>&nbsp;</div>
+        <div>&nbsp;</div>
+
+        <div class="gallery-grid">
+            <!-- Imagens da galeria aqui -->
+            <img src="images/um-gato-com-olhos-verdes-e-pelos-curtos.png" alt="Gato">
+            <img src="images/um-gato-7.png" alt="Gato">
+            <img src="images/filhotes-de-gato.png" alt="Gato">
+            <img src="images/filhotes-de-gato-1.png" alt="Gato">
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+        <p>&copy; 2025, <a href="https://github.com/fvandrad/">https://github.com/fvandrad/</a></p>
+    </footer>
+    <script>
+        function toggleMenu() {
+            const nav = document.getElementById('nav-links');
+            nav.classList.toggle('active');
+            const burger = document.querySelector('.burger-menu');
+            burger.classList.toggle('active');
+        }
+    </script>
+</body>
+
+</html>
