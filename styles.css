@@ -186,7 +186,7 @@ nav a:hover::after {
     width: 100vw;
     display: flex;
     align-items: center;
-    padding: 0 5%;
+    padding: 5%;
     background: radial-gradient(circle at center, var(--cyan), var(--blue-green));
     color: white;
     animation: gradientShift 10s infinite alternate;
@@ -239,6 +239,7 @@ nav a:hover::after {
 
 .hero-image {
     width: 50%;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -272,31 +273,6 @@ nav a:hover::after {
 @media (max-width: 768px) {
     .hero-image img {
         width: 90vw;
-        height: 60vh;
-    }
-}
-
-/* Optional: Add loading animation */
-@keyframes slideIn {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes slideIn {
-    from {
-        transform: translateX(-100px) scale(0.95);
-        opacity: 0;
-    }
-
-    to {
-        transform: translateX(0) scale(1);
-        opacity: 1;
     }
 }
 
